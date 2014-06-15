@@ -22,6 +22,7 @@ public class InterruptableThreadExample extends Thread {
 	 * Logs the date continuously every second.</br>
 	 * When interrupted the logging is stopped.
 	 */
+	@Override
 	public void run(){
 		final SimpleDateFormat simpleDateFormat=new SimpleDateFormat("kk:mm:ss");
 		while(true){
