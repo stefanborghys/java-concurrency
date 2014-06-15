@@ -15,8 +15,8 @@ import org.slf4j.LoggerFactory;
  * @author seriousbusiness
  *
  */
-public class SleepingThread {
-	private static final Logger LOGGER=LoggerFactory.getLogger(SleepingThread.class);
+public class SleepingThreadExample {
+	private static final Logger LOGGER=LoggerFactory.getLogger(SleepingThreadExample.class);
 	
 	/**
 	 * Says hello, sleeps for 3 seconds and notifies about it.</br>
