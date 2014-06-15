@@ -11,22 +11,22 @@ import org.slf4j.LoggerFactory;
  * @author seriousbusiness
  *
  */
-public class HelloRunnable implements Runnable {
-	private static final Logger LOGGER=LoggerFactory.getLogger(HelloRunnable.class);
+public class RunnableExample implements Runnable {
+	private static final Logger LOGGER=LoggerFactory.getLogger(RunnableExample.class);
 
 	/**
 	 * Contains code executed by a thread.
 	 */
 	public void run() {
-		LOGGER.info("HelloRunnable's run() method is executed");
+		LOGGER.info("RunnableExample's run() method is executed");
 	}
 	
 	/**
-	 * Creates and starts a new Thread containing a new HelloRunnable object.
+	 * Creates and starts a new Thread containing a new RunnableExample object.
 	 * @param args
 	 */
 	public static void main(String[] args){
-		new Thread(new HelloRunnable()).start();
+		new Thread(new RunnableExample()).start();
 	}
 
 }

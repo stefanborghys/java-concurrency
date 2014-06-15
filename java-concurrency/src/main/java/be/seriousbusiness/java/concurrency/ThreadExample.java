@@ -12,22 +12,22 @@ import org.slf4j.LoggerFactory;
  * @author seriousbusiness
  *
  */
-public class HelloThread extends Thread {
-	private static final Logger LOGGER=LoggerFactory.getLogger(HelloThread.class);
+public class ThreadExample extends Thread {
+	private static final Logger LOGGER=LoggerFactory.getLogger(ThreadExample.class);
 	
 	/**
 	 * Override's and implements Thread's run() method.
 	 */
 	@Override
 	public void run(){
-		LOGGER.info("HelloThread's run() method is executed");
+		LOGGER.info("ThreadExample's run() method is executed");
 	}
 	
 	/**
-	 * Creates a new HelloThread and starts it.
+	 * Creates a new ThreadExample and starts it.
 	 * @param args
 	 */
 	public static void main(String[] args){
-		new HelloThread().start();
+		new ThreadExample().start();
 	}
 }
