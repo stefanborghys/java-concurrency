@@ -74,7 +74,7 @@ example: be.seriousbusiness.java.concurrency.synchronization.ThreadInterferenceE
   
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html)  
   
-### Synchronized methods  
+### Synchronized method  
   
 <code>public synchronized void methodName(){ ... }</code>  
 A solution for Thread Interference is the use of synchronized methods.  
@@ -86,6 +86,20 @@ This strategy is effective, but can present problems with liveness.
 example: be.seriousbusiness.java.concurrency.synchronization.SynchronizedMethodExample  
   
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html)  
+  
+### Synchronized statement  
+  
+<code>synchronized(object){ ... }</code>  
+When a thread invokes a synchronized method, it automatically acquires the intrinsic lock for that method's object and releases it when the method returns.  
+The lock release occurs even if the return was caused by an uncaught exception.  
+When multiple threads want to manipulate different methods on the same object they have to wait for each other.  
+In this case synchronized statement(s) come in handy. They can allow to acquire an independent lock object for every statement.  
+  
+example synchronized statement:   be.seriousbusiness.java.concurrency.synchronization.airplane.SynchronizedStatementAirplaneSteeringWheel  
+example synchronized method:  
+be.seriousbusiness.java.concurrency.synchronization.airplane.SynchronizedMethodAirplaneSteeringWheel  
+  
+source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html)  
   
 ## Memory consistency errors  
   
