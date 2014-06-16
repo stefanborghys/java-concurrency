@@ -20,6 +20,9 @@ source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/procthread
 - **Runnable** interface: only demands to implement the run() method  
 - **Thread** class: predefines a number of Thread management methods. But requires to extend Thread  
   
+runnable example: be.seriousbusiness.java.concurrency.thread.RunnableExample  
+thread example: be.seriousbusiness.java.concurrency.thread.ThreadExample  
+  
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/runthread.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/runthread.html)  
   
 **Pausing a Thread**:  
@@ -27,6 +30,8 @@ source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/runthread.
 <code>Thread.sleep(milliseconds); // Sleeps for ... milliseconds</code>  
 The pause is not always exact the amount of millisenconds.  
 This depends upon the limits of the OS or can differ when the thread is interrupted.  
+  
+example: be.seriousbusiness.java.concurrency.thread.SleepingThreadExample  
   
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html)  
   
@@ -36,12 +41,16 @@ source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html
 An interrupt notifies a thread to stop it's current execution.  
 The action is undertaken by the Thread depends upon the implementation.  
   
+example: be.seriousbusiness.java.concurrency.thread.InterruptableThreadExample  
+  
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/interrupt.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/interrupt.html)  
   
 **Joining two Threads**:  
   
 <code>t.join();</code>  
 When one thread joins another it will wait until this joined thread has finshed.  
+  
+example: be.seriousbusiness.java.concurrency.thread.JoinExample  
   
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/join.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/join.html)  
   
@@ -59,7 +68,9 @@ source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/sync.html]
 ## Thread Interference  
 
 Interference happens when two operations, running in different threads, but acting on the same data, interleave.  
-This means that the two operations consist of multiple steps, and the sequences of steps overlap.
+This means that the two operations consist of multiple steps, and the sequences of steps overlap.  
+  
+example: be.seriousbusiness.java.concurrency.synchronization.ThreadInterferenceExample  
   
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html)  
   
@@ -71,6 +82,8 @@ Synchronized methods enable a simple strategy for preventing thread interference
 if an object is visible to more than one thread, all reads or writes to that object's variables are done through synchronized methods.  
 (An important exception: final fields, which cannot be modified after the object is constructed, can be safely read through non-synchronized methods, once the object is constructed)  
 This strategy is effective, but can present problems with liveness.  
+  
+example: be.seriousbusiness.java.concurrency.synchronization.SynchronizedMethodExample  
   
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html)  
   
