@@ -72,6 +72,8 @@ if an object is visible to more than one thread, all reads or writes to that obj
 (An important exception: final fields, which cannot be modified after the object is constructed, can be safely read through non-synchronized methods, once the object is constructed)  
 This strategy is effective, but can present problems with liveness.  
   
+source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html)  
+  
 ## Memory consistency errors  
   
 Memory consistency errors occur when different threads have inconsistent views of what should be the same data.  
