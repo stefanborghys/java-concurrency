@@ -63,6 +63,15 @@ This means that the two operations consist of multiple steps, and the sequences 
   
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html)  
   
+### Synchronized methods  
+  
+<code>public synchronized void methodName(){ ... }</code>  
+A solution for Thread Interference is the use of synchronized methods.  
+Synchronized methods enable a simple strategy for preventing thread interference and memory consistency errors:  
+if an object is visible to more than one thread, all reads or writes to that object's variables are done through synchronized methods.  
+(An important exception: final fields, which cannot be modified after the object is constructed, can be safely read through non-synchronized methods, once the object is constructed)  
+This strategy is effective, but can present problems with liveness.  
+  
 ## Memory consistency errors  
   
 Memory consistency errors occur when different threads have inconsistent views of what should be the same data.  
