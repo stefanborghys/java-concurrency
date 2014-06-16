@@ -1,4 +1,4 @@
-package be.seriousbusiness.java.concurrency.synchronization.timeout;
+package be.seriousbusiness.java.concurrency.synchronization.airplane;
 
 
 public interface AirplaneSteeringWheel {

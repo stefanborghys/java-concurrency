@@ -1,4 +1,4 @@
-package be.seriousbusiness.java.concurrency.synchronization.timeout;
+package be.seriousbusiness.java.concurrency.synchronization.airplane;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
