@@ -63,4 +63,10 @@ This means that the two operations consist of multiple steps, and the sequences 
   
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html)  
   
-## 
+## Memory consistency errors  
+  
+Memory consistency errors occur when different threads have inconsistent views of what should be the same data.  
+  
+source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/memconsist.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/memconsist.html)  
+  
+
