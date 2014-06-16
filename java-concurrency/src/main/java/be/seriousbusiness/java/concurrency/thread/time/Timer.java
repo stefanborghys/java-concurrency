@@ -1,4 +1,4 @@
-package be.seriousbusiness.java.concurrency.time;
+package be.seriousbusiness.java.concurrency.thread.time;
 
 /**
  * A timer measures the number of milliseconds passed by since started.

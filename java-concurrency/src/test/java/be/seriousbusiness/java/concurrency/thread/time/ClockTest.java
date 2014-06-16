@@ -1,6 +1,8 @@
-package be.seriousbusiness.java.concurrency.time;
+package be.seriousbusiness.java.concurrency.thread.time;
 
 import org.junit.Test;
+
+import be.seriousbusiness.java.concurrency.thread.time.Clock;
 
 public class ClockTest {
 	

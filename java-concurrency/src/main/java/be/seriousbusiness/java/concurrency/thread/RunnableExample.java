@@ -1,4 +1,4 @@
-package be.seriousbusiness.java.concurrency;
+package be.seriousbusiness.java.concurrency.thread;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package be.seriousbusiness.java.concurrency.time;
+package be.seriousbusiness.java.concurrency.thread.time;
 
 import java.text.SimpleDateFormat;
 import java.util.HashMap;

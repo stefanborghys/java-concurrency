@@ -1,4 +1,4 @@
-package be.seriousbusiness.java.concurrency;
+package be.seriousbusiness.java.concurrency.thread;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
