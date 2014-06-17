@@ -107,4 +107,18 @@ Memory consistency errors occur when different threads have inconsistent views o
   
 source: [http://docs.oracle.com/javase/tutorial/essential/concurrency/memconsist.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/memconsist.html)  
   
+# Liveness  
+  
+A concurrent application's ability to execute in a timely manner is known as its liveness.  
+Some problems:  
+- deadlock: a situation where two or more threads are blocked forever, waiting for each other  
+- starvation: a situation where a thread is unable to gain regular access to shared resources and is unable to make progress  
+- livelock: livelocked threads are unable to make further progress. However, the threads are not blocked.  
+  
+source deadlock:  
+[http://docs.oracle.com/javase/tutorial/essential/concurrency/deadlock.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/deadlock.html)   
+source starvation, livelock:  
+[http://docs.oracle.com/javase/tutorial/essential/concurrency/starvelive.html](http://docs.oracle.com/javase/tutorial/essential/concurrency/starvelive.html)  
+
+  
 
